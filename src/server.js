@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 
 app.get('/', (request, response) => {
-  return response.json({
-    message: 'Api alterações',
+  return response.status(200).json({
+    message: 'Api',
   });
 });
 
